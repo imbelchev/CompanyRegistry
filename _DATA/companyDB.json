@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5e5a1190c64f7a36d0613fe8"},"Name":"Company A","Vat":"BG000000001"}
+{"_id":{"$oid":"5e5a1222c64f7a36d0613fea"},"Name":"Company B","Vat":"BG000000002"}
+{"_id":{"$oid":"5e5a1238c64f7a36d0613feb"},"Name":"Company C","Vat":"BG000000003"}
+{"_id":{"$oid":"5e5edce24908ff8e5c00fc4d"},"Name":"New Company D","Vat":"BG123456789"}
+{"_id":{"$oid":"5e5edce84908ff8e5c00fc4e"},"Name":"New Company E","Vat":"BG1234567890"}
+{"_id":{"$oid":"5e5ee31974e7ea640cb92d7b"},"Name":"New Company F","Vat":"BG1234567891"}

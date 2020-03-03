@@ -1,0 +1,54 @@
+﻿@page "/"
+
+@inherits ListBase
+
+<h2>All Companies</h2>
+
+<div class="row">
+    <div class="col-sm-12">
+        <a href="/company/new" class="btn btn-link">Create</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Search:</span>
+            </div>
+
+            <input type="text" class="form-control"
+                   @bind-value="@CompanyModel.SearchTerm" @bind-value:event="oninput" @onkeyup="Search" />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>VAT</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var company in CompanyModel.FilteredCompanies)
+                    {
+                        <tr>
+                            <td>@company.Id</td>
+                            <td>@company.Name</td>
+                            <td>@company.VAT</td>
+                            <td>
+                                <a href="/company/@company.Id">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
